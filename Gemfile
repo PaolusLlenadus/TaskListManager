@@ -43,4 +43,12 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
 gem 'twitter-bootstrap-rails'
+# rails g bootstrap:install STATIC
+# rails g bootstrap:layout application
+
+gem 'devise'
+# rails g devise:install
+# rails g devise User
+# rake db:migrate
