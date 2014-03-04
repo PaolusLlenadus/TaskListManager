@@ -1,0 +1,10 @@
+<h1>Tweets by <%= current_user.email %></h1>
+
+<%= render 'form' %>
+<% @tweets.each do |tweet| %>
+	<div>
+		<p><%= tweet.content %></p>
+		<small><%= tweet.created_at %></small>
+	</div>
+<% end %>
+
