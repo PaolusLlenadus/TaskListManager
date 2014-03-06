@@ -1,2 +1,9 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<h1>Tweets from Everybody</h1>
+
+<% @tweets.each do |tweet| %>
+	<div class="well">
+		<p><strong><%= tweet.user.email %></strong> -- <%= tweet.content %></p>
+		<small><%= tweet.created_at %></small>
+	</div>
+<% end %>
+

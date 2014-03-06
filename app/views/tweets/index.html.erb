@@ -2,7 +2,7 @@
 
 <%= render 'form' %>
 <% @tweets.each do |tweet| %>
-	<div>
+	<div class="well">
 		<p><%= tweet.content %></p>
 		<small><%= tweet.created_at %></small>
 	</div>
