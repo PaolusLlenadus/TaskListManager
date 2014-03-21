@@ -1,10 +1,11 @@
-<h1>Tweets by <%= current_user.email %></h1>
+<h1>Task of <%= current_user.email %></h1>
 
 <%= render 'form' %>
 <% @tweets.each do |tweet| %>
 	<div class="well">
 		<p><%= tweet.content %></p>
 		<small><%= tweet.created_at %></small>
+
 	</div>
 <% end %>
 

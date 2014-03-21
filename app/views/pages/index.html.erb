@@ -1,9 +1,13 @@
-<h1>Tweets from Everybody</h1>
+<h1>Tasks</h1>
 
 <% @tweets.each do |tweet| %>
 	<div class="well">
-		<p><strong><%= tweet.user.email %></strong> -- <%= tweet.content %></p>
-		<small><%= tweet.created_at %></small>
+    <p><strong><%= tweet.user.email %></strong> <br> <b><i> Task: </i> </b> "<%= tweet.content %> "</p>
+    <h5>Task Completed  <%= check_box_tag("tweet_ids[]", tweet.id, tweet.is_completed) %></h5> 
+    <p><small><%= tweet.created_at %></small></p>
+    
+     
+    
 	</div>
 <% end %>
 
