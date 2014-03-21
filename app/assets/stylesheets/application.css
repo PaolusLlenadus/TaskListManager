@@ -11,3 +11,8 @@
  *= require_self
  *= require_tree .
  */
+/* navbar */
+.navbar-inner {
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+}
