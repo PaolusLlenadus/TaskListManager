@@ -1,11 +1,12 @@
 <ul>
   <% @tweet.errors.full_messages.each do |full_message| %>
     <li><%= full_message %></li>
+  
   <% end %>
 </ul>
 <%= form_for(@tweet, html: { role: 'form' }) do |f| %>
   <div class="form-group">
-    <%= f.label :content, class: 'control-label' %>
+  
     <%= f.text_area :content, class: 'form-control' %>
   </div>
 
